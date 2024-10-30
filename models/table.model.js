@@ -6,7 +6,8 @@ const tableSchema = new mongoose.Schema({
     },
     sku: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     skuMaster: {
         type: String,
