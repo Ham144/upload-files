@@ -14,8 +14,6 @@ app.use(express.urlencoded({ extended: true }))
 //multer
 const upload = multer({ dest: "uploads/" })
 
-app.get("/", (req, res) => { return res.send("sukses") }) //aku bahkan ga bisa akses ini
-
 //database init
 connectDB()
 
